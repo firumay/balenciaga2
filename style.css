@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.HeadForPhone{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 45px;
+}
+.BurgerMenuButton{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    width: 28px;
+    height: 28px;
+    z-index: 1;
+    cursor: pointer;
+}
+.BurgerMenuButton img{
+    width: 24px;
+    height: 24px;
+}
+.MainLogo{
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.MainLogo img{
+    width: 137px;
+}
+.menuList{
+    width: 100%;
+    height: 80vh;
+    display: none;
+    overflow: hidden;
+}
+.menuList img{
+    width: 18px;
+    height: 18px;
+    transition: 0.5s;
+}
+.menuList.open{
+    display: flex;
+}
+.mainMenu{
+    position: relative;
+    left: 0;
+}
+.mainMenu .menuTop div , .womenMenu .menuTop div, .menMenu .menuTop div , .giftsMenu .menuTop div , .exploreMenu .menuTop div{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    padding: 20px 15px;
+    width: 100vw;
+    height: 60px;
+    cursor: pointer;
+}
+.openUL{
+    transition: all 1s ease;
+}
+.mainMenu{
+    position: fixed;
+    left: 0;
+    width: 100vw;
+    text-transform: uppercase;
+    transition: left 1s ease;
+}
+.womenMenu , .menMenu , .giftsMenu , .exploreMenu{
+    position: fixed;
+    width: 100vw;
+    text-transform: uppercase;
+    left: 100vw;
+    transition: left 1s ease;
+}
+#womenBack , #menBack , #giftsBack , #exploreBack{
+    display: flex;
+    justify-content: center;
+}
+.back{
+    position: absolute;
+    left: 15px;
+}
